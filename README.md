@@ -8,15 +8,19 @@ Character encoding is the agreed mapping between the characters humans read and 
 
 ## What is inside
 
-- `01-bytes-vs-characters.md` the core distinction encoding exists to bridge.
-- `02-ascii-and-unicode.md` from 128 characters to every character, via code points.
-- `03-utf8-and-utf16.md` how code points become bytes, with a multi-byte example.
-- `04-bom-and-mojibake.md` the byte order mark and why text turns to garbage.
-- `05-practical-rules.md` use UTF-8 everywhere, and how to actually do it.
+- [01-bytes-vs-characters.md](01-bytes-vs-characters.md) the core distinction encoding exists to bridge.
+- [02-ascii-and-unicode.md](02-ascii-and-unicode.md) from 128 characters to every character, via code points.
+- [03-utf8-and-utf16.md](03-utf8-and-utf16.md) how code points become bytes, with a multi-byte example.
+- [04-bom-and-mojibake.md](04-bom-and-mojibake.md) the byte order mark and why text turns to garbage.
+- [05-practical-rules.md](05-practical-rules.md) use UTF-8 everywhere, and how to actually do it.
 
 ## The stance
 
 This reference treats encoding as a solved problem with one right default: UTF-8 for storage, transmission, and interchange, declared explicitly everywhere it can be. Nearly every encoding bug comes from a mismatch between what wrote the bytes and what read them. Pick UTF-8, declare it, and the whole class of problems mostly disappears.
+
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
 
 ## License
 
